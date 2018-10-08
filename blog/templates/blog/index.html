@@ -1,0 +1,164 @@
+<!DOCTYPE html> {% load static %}
+<html>
+
+<head>
+    <title>Risecode</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='{% static "css/style.css" %}' rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+                   <span class="sr-only">Toggle navigation</span> 
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src= "static/css/img/resized22.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="{% url 'post_list'  %}">Articles</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home">
+        <div class="landing-text">
+            <h1>RISINGCODE</h1>
+            <h3>Learn the basic bulding blocks</h3>
+            <a gref="#" class="btn btn-defualt btn-lg">get Started</a>
+        </div>
+    </div>
+
+    <a name="about" />
+    <div class="clearfix"></div>
+    <div class="padding">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="static/css/img/bootstrap.png">
+                </div>
+
+                <div class="col-sm-6 text-center">
+                    <h2>All About Risingcode.</h2>
+                    <p class="lead"> non et suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error reiciendis, quia alias et quo porro expedita, laudantium eligendi adipisci perferendis non corporis aliquam dolores quis quaerat hic reprehenderit voluptas!</p>
+
+                    <p class="lead">Lorffeem ipsum dolor sit amet, consectetur adipisicing elit. Minima, laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error totam, esse distinctio non et suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error reiciendis, quia alias et quo porro expedita, laudantium eligendi adipisci perferendis non corporis aliquam dolores quis quaerat hic reprehenderit voluptas!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a name="services" />
+    <div class="clearfix"></div>
+    <div class="padding">
+
+        <div class="container" id="servicesSection">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h4>Create websites</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusantium magni amet nobis autem excepturi voluptates earum quas fugit dignissimos repudiandae labore mollitia alias nisi, sunt, delectus esse tempora quibusdam!</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="static/css/img/sass.png" class="img-responsive">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <h4>Design android app </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusantium magni amet nobis autem excepturi voluptates earum quas fugit dignissimos repudiandae labore mollitia alias nisi, sunt, delectus esse tempora quibusdam!</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="static/css/img/less.png" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fixed">
+
+    </div>
+
+
+    <div class="padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 ">
+                    <h4>Here's the cool thing about Bootstrap...</h4>
+                    <p> non et suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error reiciendis, quia alias et quo porro expedita, laudantium eligendi adipisci perferendis non corporis aliquam dolores quis quaerat hic reprehenderit voluptas!</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error totam, esse distinctio non et suscipit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error reiciendis, quia alias et quo porro expedita, laudantium eligendi adipisci perferendis non corporis aliquam dolores quis quaerat hic reprehenderit voluptas!</p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="static/css/img/boots.jpeg">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <div class="clearfix"></div>
+        <a name="contact" />
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <br>
+                <h4>Our adress and contact info here.</h4>
+            </div>
+            <div class="col-sm-4">
+                <h3>Connect</h3>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+                <a href="https://www.google.com/" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            <div class="col-sm-4">
+                <img src="static/css/img/resized3.png" class="icon">
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.substr(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            });
+        }); 
+    </script>
+
+
+
+            <
+            /body>
+
+            <
+            /html>
