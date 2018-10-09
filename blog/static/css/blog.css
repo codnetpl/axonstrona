@@ -50,3 +50,7 @@ p{
 .post h1 a, .post h1 a:visited {
     color: #4286f4;
 }
+
+#id_text , #id_title{
+    background-color:#280e0e;
+}

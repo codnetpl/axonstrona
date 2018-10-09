@@ -41,9 +41,33 @@
 
     <div id="home">
         <div class="landing-text">
-            <h1>RISINGCODE</h1>
+            <h1><span id="namelogo">RISING</span>CODE</h1>
             <h3>Learn the basic bulding blocks</h3>
-            <a gref="#" class="btn btn-defualt btn-lg">get Started</a>
+            <!--/overlay contact form -->
+            
+            <div id="overlay" >
+  
+
+<div class="containerr">
+ <h3>Contact Form</h3>
+  <form action="/action_page.php">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Email adress..">
+
+    <label for="subject"></label>
+    <textarea id="subject" name="subject" placeholder="Write a Message.." style="height:200px"></textarea>
+    
+    <input type="button" value="Close" onclick="off()">
+    <input type="submit" value="Submit">
+    
+  </form>
+</div>
+</div>
+            <a href="#" class="btn btn-defualt btn-lg" onclick="on()">Get Started</a>
+
         </div>
     </div>
 
@@ -152,13 +176,21 @@
                     return false;
                 }
             });
-        }); 
+        });
+
+      
+        function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+
     </script>
 
 
 
-            <
-            /body>
+</body>
 
-            <
-            /html>
+</html>
