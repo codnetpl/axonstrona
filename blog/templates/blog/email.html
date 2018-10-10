@@ -1,0 +1,43 @@
+
+
+{% load static %}
+<html>
+
+<head>
+    <title>Risecode</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href='{% static "css/blog.css" %}'>
+</head>
+
+<body>
+
+    <div class="wrappers">
+        <div class="page-header">
+    <h4 id="h4text"><a href="/">Home</a></h4>
+    </div>
+    
+        <div class=conte> 
+        
+               <h1 id="mestext">Write a Message</h1>
+<form class="emailcont" method="post">
+    {% csrf_token %}
+     <input name="from_email" required="" id="id_from_email" type="email" placeholder="Email adress..">
+     <input name="subject" required="" id="id_subject" type="text" placeholder="Subject..">
+     <textarea name="message" cols="40" rows="10" required="" id="id_message" placeholder="Message.."></textarea>
+    
+    <div class="form-actions">
+      <button class="newbtn" type="submit">Send</button>
+    </div>
+</form>
+        
+        </div>
+   
+   
+   
+   
+    </div>
+
+    
